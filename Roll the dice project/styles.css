@@ -1,0 +1,132 @@
+body {
+  background: linear-gradient(300deg, #0453fc, rgb(221, 219, 220), red);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Button styles */
+.button {
+  display: inline-block;
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-size: 1.2em;
+  background-color: #90b0f7; /* Button color */
+  color: #fff; /* Text color */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+/* Glow on hover */
+.button:hover {
+  background-color: #b41919; /* New color on hover */
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8); /* Subtle glow effect on hover */
+  transform: scale(1.1); /* Enlarge on hover */
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+
+.dice {
+  text-align: center;
+  display: inline-block;
+
+}
+
+body {
+  background-color: #393E46;
+}
+
+/* Styles for the catchy heading with glow */
+h1 {
+  font-family: 'Space Grotesk', sans-serif;
+
+  font-size: 4em;
+  color: #f1f0f8; 
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 10px; 
+  margin-top: 20px;
+  position: relative;
+  animation: dance 2s infinite;
+  text-shadow: 0 0 10px rgba(245, 9, 9, 0.842); /* Subtle glow effect */
+}
+.font2{
+  font-family: 'Space Grotesk', sans-serif;
+
+  font-size: 20px;
+  color:#f1f0f8; 
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 10px; 
+  margin-top: 20px;
+  position: relative;
+  padding-bottom: 20px;
+  animation: dance 2s infinite;
+  text-shadow: 0 0 10px rgba(9, 52, 245, 0.774); /* Subtle glow effect */
+}
+
+
+/* Dance animation */
+@keyframes dance {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+}
+
+
+img {
+  width: 80%;
+  animation: rollAndGlow 1s ease-in-out forwards;
+}
+@keyframes rollAndGlow {
+  0% {
+      transform: rotate(0deg) scale(1);
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+  }
+  50% {
+      transform: rotate(360deg) scale(1.2);
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.9), 0 0 40px rgba(255, 255, 255, 0.7);
+  }
+  100% {
+      transform: rotate(720deg) scale(1);
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+  }
+}
+
+footer {
+  margin-top: 5%;
+  color: #EEEEEE;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+
+}
